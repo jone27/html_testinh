@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color: beige;
+  text-align:center;
+  color:black;
+  font-family: fantasy;">
+  <body>
+    <script>
+    var ifcondvar = document.getElementById("test")
+    function ifcond() {
+        if (document.form1.fname.value == 2) { 
+        document.getElementById("afterinput").innerText ="After a strenuous work out of the ol' cranium, you're finally satisfied with your answer";
+        document.getElementById("afterinput").className = "text2";
+        document.getElementById("afterinput").style="opacity:1;color:rgb(0,0,0);margin:5px";
+        document.getElementById("afterinput2").innerText ="SUDDENLY! A loud crash from upstairs!? Sounded a lot like it came from Nicks room....";
+        document.getElementById("afterinput2").className = "text3";
+        document.getElementById("afterinput2").style="opacity:1;color:rgb(0,0,0);margin:5px";
+        document.getElementById("afterinput3").innerText ="Do you investigate???";
+        document.getElementById("afterinput3").className = "text3";
+        document.getElementById("afterinput3").style="opacity:1;color:rgb(0,0,0);margin:5px";
+        document.getElementById("afterbutton1").className = "text3";
+        document.getElementById("afterbutton1").style="opacity:1;color:rgb(0,0,0);margin:5px";}
+        else document.getElementById("afterinput").style.opacity = 1;
+      }
+    </script>
+  <style>
+    
+   .text1 {
+     opacity: 1;
+     margin:-5px;
+     animation-name: testanimation;
+     animation-timing-function: ease;
+     animation-duration: 10s;
+   }
+   @keyframes testanimation {
+     from {opacity:0}
+     to {opacity:1}
+   }
+   .text2 {
+     opacity: 1;
+     margin:-5px;
+     animation-name: testanimation2;
+     animation-timing-function: ease;
+     animation-duration: 10s;
+   }
+   @keyframes testanimation2 {
+     0% {opacity:0}
+     20% {opacity:0}
+     100% {opacity:1}
+   }
+   .text3 {
+     opacity: 1;
+     margin:-5px;
+     animation-name: testanimation3;
+     animation-timing-function: ease;
+     animation-duration: 12s;
+   }
+   @keyframes testanimation3 {
+     0% {opacity:0}
+     66% {opacity:0}
+     67% {opacity:1}
+     100% {opacity:1}
+   }
+   .mybutton {
+     opacity:1;
+     margin:5px;
+     animation-name:test;
+     animation-duration:20s;
+   }
+   @keyframes test {
+     0% {opacity:0}
+     75% {opacity:0}
+     100% {opacity:1}
+   }
+  </style>
+   <audio autoplay> <source src="https://drive.google.com/uc?export=view&id=1RxEzW_xzDaI4OpMrAIEcqK1dv1whPBC0" type="audio/mpeg"> </audio>
+     <h1 id="eep"> Well ain't that lucky! 
+     </h1>
+     <p class='text2'>Glancing around the room you see something on the floor by the table.... what is it?!</p>
+     <button class = 'text2' style = 'margin:5px' id = "button1" onclick="document.getElementById('firstform').style.opacity=1;document.getElementById('tester').style.opacity=1">Continue after reading the paper</button>
+     <form name="form1" id="firstform" style="opacity:0;">
+      <label for="fname">Answer:</label><br>
+      <input type="text" id="fnamee" name="fname"><br>
+     </form>
+     <button style = 'opacity:0;'id = "tester" onclick='ifcond()'>bleep</button>
+     <p id="afterinput" style="color:red;opacity:0">Incorrect! Check yo numbers hun</p>
+     <p id="afterinput2"></p>
+     <p id="afterinput3"></p>
+     <button id="afterbutton1" style="opacity:0;" onclick="document.location='http://htmlpreview.github.io/?https://github.com/jone27/html_testinh/blob/master/Page2.html'">
+      Is this even a question?</button>
+  </body>
+</html>

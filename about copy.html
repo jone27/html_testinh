@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color: beige;
+  text-align:center;
+  color:black;
+  font-family: fantasy;">
+  <body>
+  <style>
+    
+   .text1 {
+     color:blue;
+     font-family: fantasy;
+     transition: color 5s;
+     opacity: 1;
+     animation-name: testanimation;
+     animation-timing-function: ease;
+     animation-duration: 10s;
+   }
+   @keyframes testanimation {
+     from {opacity:0}
+     to {opacity:1}
+   }
+   .text1:hover {
+     color:red;
+     transition-timing-function: ease;
+   }
+
+  </style>
+   <!--<audio autoplay> <source src="test.mp3" type="audio/mpeg"> </audio> --> 
+   <div class="text1">
+     <h1> About me</h1>
+     <p>This is a portfolio <ins>blublub</ins> ite about anything that can be put in a portfolio.</p>
+   </div>
+   <div class="text1" style="color:blueviolet">
+    <h1>About me</h1>
+    <p>Here is my second piece of text 0w0
+    </p>
+  </div>
+  <button onclick="document.getElementById('testid').style='color:red'">change colour</button>
+  <button onclick="document.location='http://htmlpreview.github.io/?https://github.com/jone27/html_testinh/blob/master/json.html'">change location</button>
+  <div id='testid'>
+    <h1>About me cont.</h1>
+    <p>Here is my third piece of text 0w0
+    </p>
+  </div>
+   <A HREF="http://htmlpreview.github.io/?https://github.com/jone27/html_testinh/blob/master/json.html">About this site</A>
+   <audio controls> <source src="test.mp3" type="audio/mpeg"> </audio>
+  </body>
+</html>
