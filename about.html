@@ -1,5 +1,100 @@
 <!DOCTYPE html>
 <html>
+  <body style="background-color: beige;">
+  <head>
+    <style>
+      .fadein1 {
+      animation: fadeIn ease 15s;
+      animation-delay: 6s;
+      -webkit-animation: fadeIn ease 15s;
+      -moz-animation: fadeIn ease 15s;
+      -o-animation: fadeIn ease 15s;
+      -ms-animation: fadeIn ease 15s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      70% {
+        opacity:1;
+      }
+    }
+
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      70% {
+        opacity:1;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      70% {
+        opacity:1;
+      }
+    }
+
+    @-o-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      70% {
+        opacity:1;
+      }
+    }
+
+    @-ms-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      70% {
+        opacity:1;
+      }
+    } 
+    body {
+      color: WHITE;
+      font:  Helvetica;
+      width: 420px;
+    }
+    .square-set,
+    .square {
+      border-radius: 15px;
+    }
+    .square {
+      position: static;
+      background: rgb(8, 105, 105);
+      height: 70px;
+      line-height: 60px;
+      text-align: center;
+      width: 90px;
+    }
+    body {
+      color: rgba(173, 58, 58, 0.438);
+      font:  Helvetica;
+      width: 420px;
+    }
+    .trap-set,
+    .trapezoid {
+      border-bottom: 50px solid #555;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 125px;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="square-set">
+      <figure class="square square-1">SQUARE 1</figure>
+    </div>
+    <div class="trap-set">
+      <figure class="trapezoid">TRAP 1</figure>
+    </div>
+    </body>
   <body>
    <div class="about">
      <h1>About me</h1>
